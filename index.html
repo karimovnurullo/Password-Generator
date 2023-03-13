@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="./main.css" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+	<h1>Password Generator</h1>
+	<div class="container">
+		<nav class="nav">
+			<div class="generate-div" id="password">P4$5W0rD!</div>
+			<div class="copy"><i class="uil uil-copy"></i><p>Copy</p></div>
+		</nav>
+		<main class="main">
+			<div class="character-length">
+				<div class="length-div">
+					<div class="length-name">Character Length</div>
+					<div id="range-value">10</div>
+				</div>
+				<input type="range" id="length" min="1" max="20" value="10" oninput="updateTextInput(this.value)" />
+			</div>
+			<div class="setting">
+				<label class="item upper">
+					<div class="check-box">
+						<i class="uil uil-check"></i>
+					</div>
+					<input type="checkbox" id="uppercase" />
+					Include Uppercase Letters
+				</label>
+				<label class="item lower">
+					<div class="check-box">
+						<i class="uil uil-check"></i>
+					</div>
+					<input type="checkbox" id="lowercase" />
+					Include Lowercase Letters
+				</label>
+				<label class="item number">
+					<div class="check-box">
+						<i class="uil uil-check"></i>
+					</div>
+					<input type="checkbox" id="number" />
+					Include Numbers
+				</label>
+				<label class="item symbol">
+					<div class="check-box">
+						<i class="uil uil-check"></i>
+					</div>
+					<input type="checkbox" id="symbol" />
+					Include Symbols
+				</label>
+			</div>
+			<div class="generate" id="generate">Generate</div>
+		</main>
+	</div>
+	
+</body>
+<script src="./generate.js"></script>
+
+</html>

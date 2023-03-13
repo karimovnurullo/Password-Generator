@@ -1,0 +1,235 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #18171F;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    user-select: none;
+}
+h1{
+    color: #817D92;
+}
+.container{
+    width: 540px;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav{
+    width: 100%;
+    background-color: #24232C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0 32px;
+    color: #fff;
+}
+.generate-div{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #e6e5ea;
+    user-select: none;
+}
+.copy{
+    width: fit-content;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: rgb(164, 255, 175);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    gap: 5px;
+}
+.copy:active{
+    transform: scale(0.90);
+}
+.main{
+    width: 100%;
+    height: fit-content;
+    background-color: #24232C;
+    padding: 19px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.character-length{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.length-div{
+    display: flex;
+    justify-content: space-between;
+}
+#range-value{
+    font-size: 25px;
+    color: rgb(164, 255, 175);
+}
+.buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+.length-name{
+    font-size: 22px;
+    color: #e6e5ea;
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    cursor: pointer;
+}
+input[type=checkbox] {
+    cursor: pointer;
+    display: none;
+}
+
+
+.setting{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    color: #e6e5ea;
+    width: fit-content;
+}
+
+
+.item .check-box{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    overflow: hidden;
+}
+.check-box i{
+    background: rgb(164, 255, 175);
+    color: #000;
+    transition: all 0.2s;
+    visibility: hidden;
+}
+.item.active i{
+    visibility: visible;
+}
+.generate{
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: rgb(164, 255, 175);
+    font-size: 22px;
+    user-select: none;
+    font-weight: bold;
+    transition: all 0.1s;
+    cursor: no-drop;
+    pointer-events: none;
+}
+
+.generate:active{
+    transform: scale(0.95);
+} 
+.generate:disabled{
+    cursor: no-drop;
+} 
+/* 
+
+  body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  #options {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  .button-large {
+    font-size: 24px;
+    padding: 30px 64px;
+  }
+  .button-small {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type='range'] {
+    display: block;
+    width: 200px;
+  }
+  
+  button {
+    margin-top: 16px;
+  }
+  
+  #password {
+    font-size: 24px;
+    margin-top: 16px;
+  } */
